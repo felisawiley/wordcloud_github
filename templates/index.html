@@ -1,0 +1,44 @@
+""" this HTML script creates a webpage where users can input their email address, upload multiple image files, 
+and provide consent for the application to create word clouds based on the images. 
+The form data can be submitted by clicking the "Generate" button, triggering a post request to the root URL ("/")."
+
+<!DOCTYPE html>
+<html lang="en"> 
+
+<head>
+    <meta charset="UTF-8">
+    <title>SmartWordCloud</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 1em;
+        }
+        form {
+            width: 80%;
+            max-width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>SmartWordCloud</h1>
+    <h2>Transform Your Images and Screenshots into Insightful Word Clouds</h2>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <input type="email" name="email" placeholder="Your email" required><br>
+        <input type="file" name="images" accept="image/*" multiple required><br>
+        <label>
+            <input type="checkbox" name="consent" value="agree" required>
+            I consent to comply with all privacy laws and confirm that I have asked all parties involved for permission to create the word diagram.
+        </label><br>
+        <input type="submit" value="Generate">
+    </form>
+</body>
+
+</html>
