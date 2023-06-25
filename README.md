@@ -1,6 +1,6 @@
 # Text Analysis Flask Application
 
-This is a web application built with Flask that allows users to upload image files, extracts the text from these files, generates a word cloud from the extracted text, and then serves the word cloud image for download.
+This is a web application built with Flask that allows users to upload image files, extract the text from these files, generate a word cloud from the extracted text, and then serve the word cloud image for download.
 
 ### Features
 
@@ -19,9 +19,7 @@ When a user navigates to the root URL, the index() function is called to handle 
 
 If consent is given, the application gets a list of uploaded images from the form data and processes each image. The text extracted from each file is added to a combined text string.
 
-After all files have been processed, the application generates a word cloud from the combined text and saves it as a PNG image in a static directory. The user is then redirected to a download URL to download the wordcloud image.
-
-If the request method is not POST, the user has not submitted the form yet; the application serves the index.html template, which contains the file upload form.
+After all files have been processed, the application generates a word cloud from the combined text and saves it as a PNG image in a static directory. The user is then redirected to a download URL to download the word cloud image.
 
 
 ### Running the Application
