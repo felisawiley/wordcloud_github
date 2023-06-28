@@ -6,7 +6,7 @@ This is a web application built with Flask that allows users to upload image fil
 
 Text extraction from different file types:
 
-- Images (.png): The pytesseract library, an OCR (Optical Character Recognition) 
+- Images (.png): The pytesseract library, an OCR (Optical Character Recognition) tool
 
 - Word cloud generation: The word cloud library generates a word cloud from the combined text extracted from all uploaded files. The word cloud is saved as a PNG image with a unique filename, generated using the uuid library.
 
